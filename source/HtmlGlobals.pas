@@ -306,6 +306,13 @@ const
   FontHelvet  = ThtString('Sans');
   FontCursive = ThtString('Sans');
 {$endif}
+{$ifdef Darwin}
+  FontSerif   = ThtString('Times New Roman');
+  FontMono    = ThtString('Courier New');
+  FontSans    = ThtString('Arial');
+  FontHelvet  = ThtString('Arial');
+  FontCursive = ThtString('Arial');
+{$endif}
 
 {$ifdef LCL}
 const
